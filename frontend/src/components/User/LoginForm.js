@@ -21,7 +21,7 @@ const LoginForm = () => {
       localStorage.setItem('authToken', token);
 
       alert('Login successful!');
-      window.location.href = '/dashboard';
+      window.location.href = '/';
     } catch (error) {
       if (error.response && error.response.data.message) {
         setError(error.response.data.message);
